@@ -1,0 +1,8 @@
+{
+  "name": "Đồ Án Xử Lý Ảnh - Phát Hiện Biên Bằng Đạo Hàm Bậc Nhất",
+  "description": "Ứng dụng trực quan hóa và mô phỏng các toán tử phát hiện biên đạo hàm bậc nhất: Sobel, Prewitt, Roberts Cross và Scharr.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@keyframes aurora-flow {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(30px, -40px) rotate(10deg) scale(1.08);
+  }
+  66% {
+    transform: translate(-25px, 25px) rotate(-8deg) scale(0.95);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+@keyframes aurora-flow-reverse {
+  0% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+  33% {
+    transform: translate(-35px, 30px) rotate(-10deg) scale(1.05);
+  }
+  66% {
+    transform: translate(30px, -20px) rotate(8deg) scale(0.96);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
+  }
+}
+
+.animate-aurora-1 {
+  animation: aurora-flow 18s ease-in-out infinite alternate;
+}
+
+.animate-aurora-2 {
+  animation: aurora-flow-reverse 22s ease-in-out infinite alternate;
+}
+
+.animate-aurora-3 {
+  animation: aurora-flow 25s ease-in-out infinite alternate;
+}
+
+/* Luxury Glass Card */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 
+    0 10px 30px -5px rgba(14, 165, 233, 0.08),
+    0 20px 40px -15px rgba(99, 102, 241, 0.06),
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.glass-panel-subtle {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(224, 242, 254, 0.6);
+  box-shadow: 0 4px 20px -2px rgba(14, 165, 233, 0.05);
+}
+
+.glow-pill {
+  box-shadow: 0 0 20px 0 rgba(14, 165, 233, 0.35);
+}
